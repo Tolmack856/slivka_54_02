@@ -1,0 +1,115 @@
+body { 
+    	-fx- background: url(fon.jpg);
+	-fx- background-repeat: no-repeat;
+  -fx- background-position: center center;
+  -fx- background-attachment: fixed;
+  -fx- -webkit-background-size: cover;
+  -fx- -moz-background-size: cover;
+  -fx- -o-background-size: cover;
+  -fx- background-size: 100%;
+}
+.photos {
+   width: 10em;
+    /*-webkit-filter: blur(2px);  
+    filter: blur(2px);*/
+ }
+
+ul.horizontal {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: #333;
+}
+
+ul.horizontal li {
+    float: left;
+}
+
+ul.horizontal li a {
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+
+/* Change the link color to #111 (black) on hover */
+ul.horizontal li a:hover {
+    background-color: #111;
+}
+
+
+
+
+/* vertical example below */
+
+
+ul.vertical {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    width: 250px;
+    background-color: #B8860B;
+}
+
+ul.vertical li a {
+    display: block;
+    color: #000;
+    padding: 8px 16px;
+    text-decoration: none;
+}
+
+/* Change the link color on hover */
+ul.vertical li a:hover {
+    background-color: #00FA9A;
+    color: #0000FF;
+}
+
+<!-- HTML !-->
+<button class="button-85" role="button">Button 85</button>
+
+/* CSS */
+.button-85 {
+  padding: 0.6em 2em;
+  border: none;
+  outline: none;
+  color: rgb(255, 255, 255);
+  background: #111;
+  cursor: pointer;
+  position: relative;
+  z-index: 0;
+  border-radius: 10px;
+  user-select: none;
+  -webkit-user-select: none;
+  touch-action: manipulation;
+}
+
+.button-85:before {
+  content: "";
+  background: linear-gradient(
+    45deg,
+    #ff0000,
+    #ff7300,
+    #fffb00,
+    #48ff00,
+    #00ffd5,
+    #002bff,
+    #7a00ff,
+    #ff00c8,
+    #ff0000
+  );
+  position: absolute;
+  top: -2px;
+  left: -2px;
+  background-size: 400%;
+  z-index: -1;
+  filter: blur(5px);
+  -webkit-filter: blur(5px);
+  width: calc(100% + 4px);
+  height: calc(100% + 4px);
+  animation: glowing-button-85 20s linear infinite;
+  transition: opacity 0.3s ease-in-out;
+  border-radius: 10px;
+
+}
