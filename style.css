@@ -1,12 +1,12 @@
 body { 
-    	-fx-background: url(fon.jpg);
-	-fx-background-repeat: no-repeat;
-  -fx-background-position: center center;
-  -fx-background-attachment: fixed;
-  -fx--webkit-background-size: cover;
-  -fx--moz-background-size: cover;
-  -fx--o-background-size: cover;
-  -fx-background-size: 100%;
+    	-fx- background: url(fon.jpg);
+	-fx- background-repeat: no-repeat;
+  -fx- background-position: center center;
+  -fx- background-attachment: fixed;
+  -fx- -webkit-background-size: cover;
+  -fx- -moz-background-size: cover;
+  -fx- -o-background-size: cover;
+  -fx- background-size: 100%;
 }
 .photos {
    width: 10em;
